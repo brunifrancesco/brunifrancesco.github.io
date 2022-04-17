@@ -314,6 +314,15 @@ section {
   overflow: hidden;
 }
 
+.section-formazione {
+font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: ;
+  color: #45505b;
+}
 .section-title {
   text-align: center;
   padding-bottom: 30px;
