@@ -80,7 +80,7 @@ class DictSerializerMixin:
     """
     return dict(amp=amp, freq=freq, phase=phase)
 
-class WaveWithSer(SinFunctionBasedSignal):
+class SignalWithSer(SinFunctionBasedSignal, DictSerializerMixin):
   """Serializator
   """
   def serialize(self):
