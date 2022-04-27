@@ -242,3 +242,17 @@ class WaveSampleCollection(Iterable):
   def __iter__(self):
     return SequentialIterator(self._collection)
 
+
+class SinWaveformBasedSignal(Signal):
+
+  function = np.sin
+
+  def __init__(self, *args, **kwargs):
+    super().__init__(*args, **kwargs)
+  
+
+  def create_wave(self, duration=2, framerate=3000):
+    ys, ts = create_wave_samples(duration, framerate, self.freq, self.amp, periodic_function=self.function)
+    self.ys = ys
+    self.ts = ts
+    return Wave(ys, ts, framerate=framerate)
