@@ -1057,3 +1057,8 @@ font-size: 32px;
 #footer .credits {
   font-size: 13px;
 }
+
+.goodreads-icon svg path {
+  stroke: #000000;
+  stroke-width: 3px;
+}
